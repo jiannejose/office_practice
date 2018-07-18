@@ -2,6 +2,7 @@
   box-sizing: border-box;
   outline: 0;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .hero__container {
@@ -13,13 +14,61 @@
 
 .hero__image {
   width: 50%;
-  position: relative;
+  position: absolute;
   top: 0;
-  left: 0;
-  background-blend-mode: overlay;
+  left: -450px;
+  background-color: #fbfcf6;
+  background-blend-mode: multiply;
+  line-height: 0;
 }
 .hero__image img {
-  width: 100%;
+  width: 130%;
+  height: 100%;
+}
+
+.hero__name {
+  width: 50%;
+  position: relative;
+  left: 30%;
+  top: 150px;
+}
+.hero__name .hero__name--bio {
+  font-size: 5.5em;
+  font-weight: 600;
+  color: #efefe9;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.hero__bio {
+  width: 40%;
+  position: relative;
+  top: 25%;
+  right: -35%;
+  columns: 2;
+  font-size: 0.8em;
+  line-height: 1.7em;
+}
+.hero__bio p::first-letter {
+  font-size: 5em;
+  font-weight: 600;
+}
+
+.hero__post {
+  width: 420px;
+  position: relative;
+  right: -45%;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-right: 50px;
+  border-top: 2px solid #efefe9;
+  font-size: 0.8em;
+}
+
+.hero__post--name > p {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
