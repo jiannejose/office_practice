@@ -6,68 +6,136 @@
 }
 
 .hero__image {
-    width: 50%;
+    width: 135%;
+    max-width: 1365px;
     position: absolute;
     top: 0;
-    left: -450px;
-    background-color: $white-500;
-    background-blend-mode: multiply;
+    left: -48%;
+    // background-color: $white-500;
+    // background-blend-mode: multiply;
     line-height: 0;
 
     img {
-        width: 130%;
+        width: 100%;
         height: 100%;
     }
 }
 
 .hero__name {
-    width: 50%;
+    width: 55%;
     position: relative;
-    left: 30%;
-    top: 150px;
-    
-    .hero__name--bio {
-        font-size: 5.5em;
-        font-weight: 600;
-        color: $gray-500;
-        text-transform: uppercase;
-        line-height: 0;
+    left: 40%;
+    top: 135px;
+
+    & img {
+        width: 100%;
     }
 }
 
-.hero__bio {
-    width: 40%;
-    position: relative;
-    top: 25%;
-    right: -35%;
-    columns: 2;
+.hero__name--bio {
+    font-size: 5em;
+    font-weight: 600;
+    color: $gray-500;
+    text-transform: uppercase;
+    line-height: 0;
+}
 
+.hero__bio {
+    width: 55%;
+    position: relative;
+    top: 20%;
+    left: 42%;
+    columns: 2;
     font-size: 0.8em;
     line-height: 1.7em;
 
     p::first-letter {
+        // initial-letter: 4 5;
         font-size: 5em;
         font-weight: 600;
     }
 }
 
 .hero__post {
-    width: 420px;
+    width: 510px;
     position: relative;
-    right: -45%;
+    right: -50%;
     top: 35%;
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
-    padding-right: 50px;
     border-top: 2px solid $gray-500;
-
     font-size: 0.8em;
 }
 
 .hero__post--name {
-    > p {
+    color: $gray-500;
+    border-right: 1px solid $gray-500;
+    padding-top: 25px;
+    padding-right: 20px;
+
+    p:first-child {
         font-weight: 600;
     }
 }
 
+.hero__post--title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 25px 100px 0 15px;
+}
+
+@include breakpoint(1280px) {
+    .hero__image {
+        left: -38%;
+    }
+
+    .hero__name {
+        left: 35%;
+    }
+
+    .hero__name--bio {
+        font-size: 5.5em;
+    }
+
+    .hero__bio {
+        top: 23%;
+        left: 40%;
+    }
+
+    .hero__post {
+        right: -58%;
+        top: 32%;
+    }
+
+    .hero__post--name {
+        color: $black-900;
+    }
+}
+
+@include breakpoint(1366px) {
+    .hero__image {
+        left: -36%;
+    }
+}
+
+@include breakpoint(1920px) {
+    .hero__image {
+        max-width: 1920px;
+    }
+
+    .hero__name--bio {
+        font-size: 8em;
+    }
+
+    .hero__bio,
+    .hero__post {
+        font-size: 1em;
+    }
+
+    .hero__post {
+        width: 650px;
+        top: 40%;
+        line-height: 1.6em;
+    }
+}

@@ -5,6 +5,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 .hero__container {
   width: 100%;
   height: 100vh;
@@ -13,27 +17,30 @@
 }
 
 .hero__image {
-  width: 50%;
+  width: 135%;
+  max-width: 1365px;
   position: absolute;
   top: 0;
-  left: -450px;
-  background-color: #fbfcf6;
-  background-blend-mode: multiply;
+  left: -48%;
   line-height: 0;
 }
 .hero__image img {
-  width: 130%;
+  width: 100%;
   height: 100%;
 }
 
 .hero__name {
-  width: 50%;
+  width: 55%;
   position: relative;
-  left: 30%;
-  top: 150px;
+  left: 40%;
+  top: 135px;
 }
-.hero__name .hero__name--bio {
-  font-size: 5.5em;
+.hero__name img {
+  width: 100%;
+}
+
+.hero__name--bio {
+  font-size: 5em;
   font-weight: 600;
   color: #efefe9;
   text-transform: uppercase;
@@ -41,10 +48,10 @@
 }
 
 .hero__bio {
-  width: 40%;
+  width: 55%;
   position: relative;
-  top: 25%;
-  right: -35%;
+  top: 20%;
+  left: 42%;
   columns: 2;
   font-size: 0.8em;
   line-height: 1.7em;
@@ -55,20 +62,84 @@
 }
 
 .hero__post {
-  width: 420px;
+  width: 510px;
   position: relative;
-  right: -45%;
+  right: -50%;
   top: 35%;
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
-  padding-right: 50px;
   border-top: 2px solid #efefe9;
   font-size: 0.8em;
 }
 
-.hero__post--name > p {
+.hero__post--name {
+  color: #efefe9;
+  border-right: 1px solid #efefe9;
+  padding-top: 25px;
+  padding-right: 20px;
+}
+.hero__post--name p:first-child {
   font-weight: 600;
+}
+
+.hero__post--title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 25px 100px 0 15px;
+}
+
+@media all and (min-width: 1280px) {
+  .hero__image {
+    left: -38%;
+  }
+
+  .hero__name {
+    left: 35%;
+  }
+
+  .hero__name--bio {
+    font-size: 5.5em;
+  }
+
+  .hero__bio {
+    top: 23%;
+    left: 40%;
+  }
+
+  .hero__post {
+    right: -58%;
+    top: 32%;
+  }
+
+  .hero__post--name {
+    color: #000000;
+  }
+}
+@media all and (min-width: 1366px) {
+  .hero__image {
+    left: -36%;
+  }
+}
+@media all and (min-width: 1920px) {
+  .hero__image {
+    max-width: 1920px;
+  }
+
+  .hero__name--bio {
+    font-size: 8em;
+  }
+
+  .hero__bio,
+.hero__post {
+    font-size: 1em;
+  }
+
+  .hero__post {
+    width: 650px;
+    top: 40%;
+    line-height: 1.6em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
