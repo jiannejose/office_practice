@@ -1,0 +1,9 @@
+.u-container {
+    padding: 0 10px;
+}
+
+@include breakpoint(medium) {
+    .u-container {
+        padding: 0 20px;
+    }
+}

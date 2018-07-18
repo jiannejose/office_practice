@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.o-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1f1f1f;
+}
+
+.o-subheading {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+  color: #7f7f7f;
+}
+.o-subheading span {
+  font-weight: 500;
+  color: #1f1f1f;
+}
+
+.o-model {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #1f1f1f;
+  letter-spacing: 0.1em;
+}
+.o-model::before {
+  content: attr(data-brand);
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #7f7f7f;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 2.5em;
+  display: block;
+}
+
+.o-button {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.65em;
+  font-weight: 500;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border: 2px solid #1f1f1f;
+  padding: 5px 15px;
+}
+
+.u-container {
+  padding: 0 10px;
+}
+
+@media all and (min-width: 768px) {
+  .u-container {
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

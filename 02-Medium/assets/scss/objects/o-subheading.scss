@@ -1,0 +1,10 @@
+.o-subheading {
+    font-family: $font-subheading;
+    font-size: 0.8em;
+    color: $gray-900;
+
+    span {
+        font-weight: 500;
+        color: $black-800;
+    }
+}
