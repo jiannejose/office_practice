@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow: hidden;
+  background-color: #fcfcfc;
 }
 
 .o-title {
@@ -53,10 +53,99 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-decoration: none;
-  border: 2px solid #1f1f1f;
+  border: 2px solid #000000;
+  background-color: #fcfcfc;
   padding: 5px 15px;
+  transition: all 400ms ease;
 }
 
+.o-button:hover {
+  color: #fcfcfc;
+  background-color: #000000;
+}
+
+.c-products__container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.c-product {
+  padding-bottom: 30px;
+  margin-top: 40px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+  position: relative;
+}
+
+.c-product__inner {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+}
+
+.c-product__image {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.c-product__image img {
+  width: 100%;
+  line-height: 0;
+}
+
+.c-product__details {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 1024px) {
+  .c-products__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .c-product {
+    border-bottom: none;
+  }
+
+  .c-product .c-product__inner {
+    top: 0;
+    left: 0;
+    transform: scale(1, 1.3);
+    background-color: transparent;
+    box-shadow: none;
+    transition: all 400ms ease;
+  }
+  .c-product .c-product__image img {
+    transform: scale(0.9);
+    transition: all 400ms ease;
+  }
+
+  .c-product:hover {
+    cursor: pointer;
+  }
+  .c-product:hover .c-product__inner {
+    top: 15px;
+    box-shadow: 8px 8px 25px 8px rgba(153, 153, 153, 0.2);
+    transform: scale(0.9, 1);
+    background-color: #fcfcfc;
+  }
+  .c-product:hover .c-product__image img {
+    transform: scale(1);
+  }
+}
+@media all and (min-width: 1280px) {
+  .c-product:hover .c-product__inner {
+    top: 35px;
+    transform: scale(0.9, 1.16);
+  }
+}
 .u-container {
   padding: 0 10px;
 }
@@ -65,6 +154,27 @@ body {
   .u-container {
     padding: 0 20px;
   }
+}
+@media all and (min-width: 1024px) {
+  .u-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 1280px) {
+  .u-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 1920px) {
+  .u-container {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+.u-mt-50 {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

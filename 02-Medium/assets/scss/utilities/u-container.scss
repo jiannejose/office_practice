@@ -7,3 +7,24 @@
         padding: 0 20px;
     }
 }
+
+@include breakpoint(large) {
+    .u-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+} 
+
+@include breakpoint(1280px) {
+    .u-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+} 
+
+@include breakpoint(1920px) {
+    .u-container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+} 

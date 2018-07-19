@@ -6,6 +6,13 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-decoration: none;
-    border: 2px solid $black-800;
+    border: 2px solid $black-900;
+    background-color: $white-500;
     padding: 5px 15px;
+    transition: all 400ms ease;
+}
+
+.o-button:hover {
+    color: $white-500;
+    background-color: $black-900;
 }
