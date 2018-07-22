@@ -1,5 +1,98 @@
 .label {
+    font-size      : 0.8em;
+    font-weight    : 600;
+    color          : $gray-800;
+    text-transform : uppercase;
+}
+
+.button {
+    font-size       : 0.75em;
+    font-weight     : 600;
+    color           : $white-500;
+    letter-spacing  : 0.1em;
+    text-decoration : none;
+    text-transform  : uppercase;
+    border          : 2px solid $gray-800-transparent;
+    background-color: transparent;
+    padding         : 10px 15px;
+    transition      : all 400ms ease;
+
+    &:hover {
+        border      : 2px solid $yellow-900;
+    }
+}
+
+.link {
+    font-size       : 0.75em;
+    font-weight     : 600;
+    color           : $white-500;
+    letter-spacing  : 0.1em;
+    text-decoration : none;
+    text-transform  : uppercase;
+    border-bottom   : 2px solid $gray-800-transparent;
+    padding-bottom  : 5px;
+    transition      : all 400ms ease;
+
+    &:hover {
+        border-bottom: 2px solid $yellow-900;
+    }
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background-color: rgba(98, 98, 98, 0.2);
+}
+
+.summary {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: $white-500;
+    letter-spacing: 0.05em;
+    line-height: 1.75em;
+}
+
+.makers {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: $white-500;
+    text-align: right;
+    letter-spacing: 0.05em;
+    line-height: 1.75em;
+}
+
+.photo {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 2px solid $gray-800-transparent;
+}
+
+.name {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: $white-500; 
+}
+
+.role {
+    font-size: 0.85em;
+    font-weight: 600;
     color: $gray-800;
-    text-transform: uppercase;
-    font-family: $font-primary;
+}
+
+.rating {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: $white-500; 
+}
+
+.over {
+    font-size: inherit;
+    font-weight: 500;
+    color: $gray-800;
+    padding: 0 10px;
+}
+
+body {
+    background-color : $black-800;
 }

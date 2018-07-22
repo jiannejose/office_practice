@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Work Sans", sans-serif;
+}
+
+.label {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #626262;
+  text-transform: uppercase;
+}
+
+.button {
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #d1d1d1;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid rgba(98, 98, 98, 0.3);
+  background-color: transparent;
+  padding: 10px 15px;
+  transition: all 400ms ease;
+}
+.button:hover {
+  border: 2px solid #fcce2c;
+}
+
+.link {
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #d1d1d1;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(98, 98, 98, 0.3);
+  padding-bottom: 5px;
+  transition: all 400ms ease;
+}
+.link:hover {
+  border-bottom: 2px solid #fcce2c;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  background-color: rgba(98, 98, 98, 0.2);
+}
+
+.summary {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #d1d1d1;
+  letter-spacing: 0.05em;
+  line-height: 1.75em;
+}
+
+.makers {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #d1d1d1;
+  text-align: right;
+  letter-spacing: 0.05em;
+  line-height: 1.75em;
+}
+
+.photo {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  border: 2px solid rgba(98, 98, 98, 0.3);
+}
+
+.name {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #d1d1d1;
+}
+
+.role {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #626262;
+}
+
+.rating {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #d1d1d1;
+}
+
+.over {
+  font-size: inherit;
+  font-weight: 500;
+  color: #626262;
+  padding: 0 10px;
+}
+
+body {
+  background-color: #0f1218;
+}
+
+/*# sourceMappingURL=style.css.map */
