@@ -56,7 +56,7 @@ hr {
   line-height: 1.75em;
 }
 
-.makers {
+.maker {
   font-size: 0.9em;
   font-weight: 500;
   color: #d1d1d1;
@@ -99,6 +99,13 @@ hr {
 
 body {
   background-color: #0f1218;
+}
+
+.makers-list > .maker-label {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
