@@ -1,9 +1,29 @@
+.movie-summary {
+    > .label {
+        padding-bottom: 10px;
+    }
+}
+
 .makers-list {
 
     > .maker-label {
         width: 300px;
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: space-between;
+        padding-bottom: 10px;
+    }
+}
+
+.cast {
+    display: flex;
+    align-items: center;
+
+    > .details {
+        padding-left: 15px;
+
+        > .name {
+            padding-bottom: 5px;
+        }
     }
 }
