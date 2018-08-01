@@ -1,29 +1,70 @@
 .movie-summary {
     > .label {
-        padding-bottom: 10px;
+        padding-bottom : 10px;
     }
 }
 
 .makers-list {
 
     > .maker-label {
-        width: 300px;
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        padding-bottom: 10px;
+        width           : 300px;
+        display         : flex;
+        align-items     : start;
+        justify-content : space-between;
+        padding-bottom  : 10px;
     }
 }
 
 .cast {
-    display: flex;
-    align-items: center;
+    display     : flex;
+    align-items : center;
 
     > .details {
-        padding-left: 15px;
+        padding-left : 15px;
 
         > .name {
-            padding-bottom: 5px;
+            padding-bottom : 5px;
         }
+    }
+}
+
+.casts-list {
+    display   : flex;
+    flex-wrap : wrap;
+
+    > .label {
+        width          : 100%;
+        padding-bottom : 15px;
+    }
+
+    > .cast:not(:last-child) {
+        padding-right : 30px;
+    }
+}
+
+.iconed-link {
+    display : flex;
+
+    > .icon {
+        width        : 18px;
+        height       : 18px;
+        margin-right : 10px;
+    }
+}
+
+.numbered-link {
+    > .link .number {
+        color       : $yellow-900;
+        font-weight : 400;
+    }
+}
+
+.rating-block {
+    display : flex;
+
+    > .icon {
+        width        : 24px;
+        height       : 24px;
+        margin-right : 15px;
     }
 }
