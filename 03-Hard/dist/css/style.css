@@ -160,4 +160,25 @@ body {
   margin-right: 15px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > .logo {
+  width: 230px;
+  height: 100%;
+}
+.container > .details {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .container {
+  width: 70%;
+  float: right;
+}
+
 /*# sourceMappingURL=style.css.map */
