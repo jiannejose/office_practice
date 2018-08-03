@@ -1,11 +1,13 @@
-.container {
+.movie-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid $gray-800-transparent;
 
     > .logo {
         width: 230px;
         height: 100%;
+        padding-bottom: 20px;
     }
 
     > .details {
@@ -17,8 +19,27 @@
 }
 
 .header {
-    > .container {
-        width: 70%;
-        float: right;
+    > .movie-header {
+        width: 800px;
+    }
+}
+
+.movie-poster {
+    
+    > .poster {
+        width: 280px;
+        height: 100%;
+    }
+
+    > .makers-list {
+        width: 280px;
+        padding: 25px 0 15px;
+        border-bottom: 1px solid $gray-800-transparent;
+    }
+
+    > .link {
+        display: inline-block;
+        padding-top: 20px;
+        margin: 0 auto;
     }
 }
